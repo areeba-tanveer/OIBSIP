@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins',sans-serif;
+
+}
+a{
+    text-decoration: none;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(26, 26, 26);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
+
+}
+nav ul{
+    display: flex;
+    justify-content:center;
+
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}   
+nav ul li a{
+    color: white;
+    font-weight: 400;
+    font-size: 23px;
+    padding: 5px;
+    transition: color 1s ease;
+}
+nav .left{
+    font-size: 25px;
+    transition: all 1s ease;
+    color: white;
+}
+nav .left span{
+    font-size: 25px;
+    transition: all 1s ease;
+    color:crimson;
+}
+
+nav .left:hover{
+    color: crimson;
+
+}
+nav .left span:hover{
+    color: white;
+}
+nav ul li a:hover{
+    color: crimson;
+    
+}
+
+/* Home styling */
+.home{
+    display: flex;
+    background: url('images/bg2.jpg') no-repeat center;
+    height: 100vh;
+    min-height: 500px;
+}
+.home .max-width{
+    margin: 410px 0 auto 40px;
+}
+.home .home-content .intro1{
+    font-size: 27px;
+    font-weight: 600;
+    color: white;
+}
+.home .home-content .intro2{
+    font-size: 75px;
+    font-weight: 600;
+    margin: -3px;
+    color: white;
+}
+.home .home-content .intro3{
+    font-size: 40px;
+    margin: 5px 0;
+    color: white;
+
+}
+.home .home-content .intro3 span{
+    color: crimson;
+    font-weight: 600;
+
+}
+/* about section */
+section{
+    padding: 100px 0;
+}
+.about{
+    font-family: 'Popins',sans-serif;
+
+}
+.about .about-title{
+    font-family: 'Popins',sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+
+
+}
+.about-title{
+    position: relative;
+}
+.about-title::before{
+    content: '';
+    position: absolute;
+    width: 180px;
+    bottom: 0px;
+    left: 50%;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+} 
+.about-title::after{
+    content: "Who I am";
+    position: absolute;
+    left: 50%;
+    bottom: -12px;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: white;
+    transform: translateX(-50%);
+
+}
+.about .about-content .left img {
+      height: 400px;
+      width: 400px;
+      object-fit: cover;
+      position: relative;
+      border: 10px solid white;
+}
+.about .about-content .left .image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.about .about-content .left .image-wrapper::after {
+    content: '';
+    position: absolute;
+    left: .1px;
+    top: .1px;
+    height: calc(100% + 14px);
+    width: calc(100% + 14px);
+    border: 7px solid crimson;
+    z-index: -1;
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.about .about-content .left{
+    width: 45%;
+
+}
+.right .info span{
+    color: crimson;
+    font-weight: 600;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+   
+}
+.button{
+    display: inline-block; 
+    padding: 10px 30px;
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: .01rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: .3s ease;
+    transition-property: background-color,color;
+
+}
+.button:hover{
+    color: rgb(255, 255, 255);
+    background-color: crimson;
+}
+/* services */
+.services{
+    font-family: 'Popins',sans-serif;   
+}
+.services .services-title{
+    font-family: 'Popins',sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+
+
+}
+.services-title{
+    position: relative;
+    
+}
+.services-title::before{
+    content: '';
+    position: absolute;
+    width: 180px;
+    bottom: 0px;
+    left: 50%;
+    height: 3px;
+    background: rgb(255, 255, 255);
+    transform: translateX(-50%);
+} 
+.services-title::after{
+    content: "What I provide";
+    position: absolute;
+    left: 50%;
+    bottom: -12px;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: rgb(15, 4, 32);
+    transform: translateX(-50%);
+
+}
+.services .services-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+}
+.services{
+   color: white;
+   padding: 100px 0;
+   background-color: rgb(16, 4, 36); 
+}
+.services .services-content .service-cards{
+  width: calc(20%-20px);
+  background: #1a0738;
+  text-align: center;
+  padding: 20px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  width: 280px;
+  height: auto;
+  transition: background-color 0.3s ease;
+}
+.services .service-cards .text{
+    font-size: 25px;
+    font-weight: 700;
+}
+.services .service-cards img{
+    height: 100px;
+    width: 100px;
+}
+.services .service-cards p{
+    font-family: 'popins',sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+
+}
+.services .services-content .service-cards:hover {
+    background-color: rgb(23, 13, 109); 
+  }
+/* Services */
+.skill .skill-title{
+    font-family: 'Popins',sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+
+
+}
+.skill-title{
+    position: relative;
+}
+.skill-title::before{
+    content: '';
+    position: absolute;
+    width: 180px;
+    bottom: 0px;
+    left: 50%;
+    height: 3px;
+    background: rgb(0, 0, 0);
+    transform: translateX(-50%);
+} 
+.skill-title::after{
+    content: "What I Know";
+    position: absolute;
+    left: 50%;
+    bottom: -12px;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: rgb(255, 255, 255);
+    transform: translateX(-50%);
+
+}
+.skill{
+    font-family: 'Popins',sans-serif;
+    color: black;
+}
+.skill .skill-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+.skill .skill-content .column{
+    width: 500px;
+}
+.skill .skill-content  .left .text{
+    font-size: 28px;
+    font-weight:600 ;
+    margin-bottom: 10px;
+}
+.skill .skill-content .right .progress{
+    margin-bottom: 19px;
+
+}
+.skill .skill-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skill .skill-content .right span{
+    font-weight: 800;
+    font-size: 20px;
+}
+.skill .skill-content .left p{
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 25px;
+}
+.skill .skill-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: rgb(131, 128, 128);
+    position: relative;
+}
+.skill .skill-content .right .line::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.skill .skill-content .right .html::before{
+    width: 90%;
+}
+.skill .skill-content .right .css::before{
+    width: 90%;
+}
+.skill .skill-content .right .js::before{
+    width: 85%;
+}
+.skill .skill-content .right .react::before{
+    width: 80%;
+}
+.skill .skill-content .right .php::before{
+    width: 70%;
+}
+.skill .skill-content .right .mysql::before{
+    width: 70%;
+}
+/* contact */
+.contact{
+    background-color: rgb(16, 4, 36); 
+}
+.contact .contact-content{
+    color: white;
+}
+.contact .contact-title{
+    font-family: 'Popins',sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+
+
+}
+.contact-title{
+    position: relative;
+    color: white;
+}
+.contact-title::before{
+    content: '';
+    position: absolute;
+    width: 180px;
+    bottom: 0px;
+    left: 50%;
+    height: 3px;
+    background: rgb(255, 255, 255);
+    transform: translateX(-50%);
+} 
+.contact-title::after{
+    content: "Reach Out";
+    position: absolute;
+    left: 50%;
+    bottom: -12px;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: rgb(15, 4, 32);
+    transform: translateX(-50%);
+
+}
+.contact .contact-content p{
+    color: white;
+}
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.contact .contact-content .column{
+    width: 350px;
+}
+
+.contact .contact-content .text{
+    font-size: 35px;
+    font-weight: 600px;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+
+}
+.contact .contact-content .left .img{
+    margin: 18px 0;
+    font-size: 25px;  
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items :center;
+    padding: 10px;
+    
+    
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+
+.contact .contact-content .info .head{
+    font-weight: 500;
+    font-size: 23px;
+}
+.contact .contact-content .info .sub-title{
+    color: #ffffff;
+}
+.contact .right form .field{
+    display: flex;
+
+}
+.contact .right form .field,.contact .right form .fields .field{
+    height:45px ;
+    width: 100% ;
+    margin-bottom: 15px;
+}
+.contact .right form .field input,.contact .right form .textarea textarea{
+   height: 100%;
+   width: 100%;
+   border: 1px solid lightgrey;
+   outline: none;
+   padding: 0 15px;
+   font-size: 17px;
+   font-family: 'Poppins',sans-serif;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .email{
+    margin-left: 10px;
+}
+.contact .right form .textarea{
+    height: 80px;
+
+}
+form .button{
+    color: white;
+}
+footer{
+    font-family: 'Poppins',sans-serif;
+}
+/* footer */
+footer{
+    background: #ffffff;
+    padding: 20px 23px;
+    height: 50px;
+    font-size: 23px;
+
+}
+footer span a{
+    color: crimson;
+}
+footer span a:hover{
+
+   text-decoration: underline;  
+}
+
+
