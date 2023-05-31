@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Temperature Converter</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="temp.js">
+</head>
+<body>
+    <h1>Temperature Converter</h1>
+    <div class="container">
+      <div class="logo">
+       <img src="images/logo.png" alt="">
+       <h1>Welcome to our temperature converter tool!</h1>
+      </div>
+    <label>Enter temperature:</label>
+    <input type="text" id="temperatureInput" placeholder="Enter temperature" />
+
+    <label>Choose unit:</label>
+    <select  class='select' id="unitSelect">
+      <option value="celsius">Celsius</option>
+      <option value="fahrenheit">Fahrenheit</option>
+    </select>
+
+    <div class="btn-container">
+      <button class="btn" onclick="convertTemperature()">Convert</button>
+    </div>
+
+    <div class="result">
+      <p id="resultText"></p>
+    </div>
+  </div>
+
+  <script src="temp.js"></script>
+</body>
+</html>

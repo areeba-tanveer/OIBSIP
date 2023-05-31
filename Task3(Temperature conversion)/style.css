@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(images/vimal-s-YOkeuwCaTm0-unsplash.jpg);
+  }
+
+  h1 {
+    text-align: center;
+  }
+ 
+  .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo img{
+    width: 150px;
+  }
+  .container {
+    width: 900px;
+    height: 800px;
+    margin: 0 auto;
+    background-color: hsla(109, 61%, 84%, 0.705);
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  label {
+    font-size: 25px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  input[type="text"] {
+    width: 50%;
+    height: 30px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 5px;
+  }
+
+  select {
+    width: 51%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    height: 42px;
+  }
+
+  .btn-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .btn {
+
+    padding: 10px 20px;
+    background-color: #4cbb50;
+    color: white;
+    border: 3px solid #4cbb50;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 26px;
+    margin-top: 20px;
+
+  }
+  .btn:hover{
+    color: #043b04;
+    background-color: #b9e4c0;
+    font-weight: 700;
+    
+    
+  }
+
+  .result {
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+  }
